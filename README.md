@@ -67,20 +67,35 @@ Install Tesseract OCR:
 - Edit `bytetrack.yaml` (or `botsort.yaml`) to adjust tracker parameters.
 - Change detection classes or OCR preprocessing in `src/main.py` if needed.
 
-## Demo Video
-- The output video (output/output_video.mp4) demonstrates player tracking, ID assignment, and attempted jersey number recognition.
--The demo video shows the output of the tracking pipeline, with bounding boxes and IDs overlaid on each player.
--Tracking metrics are computed using src/track_metrics.py.
+## Demo
 
+- The output video (`output/output_video.mp4`) demonstrates player tracking, ID assignment, and attempted jersey number recognition.
+- Tracking metrics are computed using `src/track_metrics.py`.
 
-## Troubleshooting
-- **Tesseract not found:** Ensure it is installed and in your system PATH.
-- **Model file missing:** Download `best.pt` and place in `data/`.
-- **Output video not playing:** Try a different player or re-encode with ffmpeg.
+## Note on Large Files
+
+> **Note:** The model file `data/best.pt` is **not included** due to GitHub's file size limit.  
+> Please contact me for access, or use your own YOLO weights.
+
+## How to Reproduce
+
+1. Place your YOLO model weights as `data/best.pt`.
+2. Place your input video as `data/15sec_input_720p.mp4`.
+3. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+4. Run the main script:
+   ```
+   python src/main.py
+   ```
+5. (Optional) Compute tracking metrics:
+   ```
+   python src/track_metrics.py
+   ```
 
 ## Contact
 For questions or access to the model file, contact:
 - **Babneek** (<babneeksaini@gmail.com>)
 
----
-**For methodology, challenges, limitations, and future work, see `report.md`.**
+For the model file or any questions, please contact [your email or GitHub username]. 
