@@ -70,4 +70,4 @@ This project solves the player re-identification task in sports footage, as deta
 
 ## Contact
 
-For the model file or any questions, please contact [your email or GitHub username]. 
+For the model file or any questions, please contact babneeksaini@gmail.com. 
