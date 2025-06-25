@@ -27,7 +27,6 @@ This repository provides code and instructions for tracking and re-identifying s
 - OpenCV
 - Tesseract OCR (system install)
 - NumPy, pandas, PyYAML
-- ffmpeg (optional, for video trimming)
 
 Install Python dependencies:
 ```
