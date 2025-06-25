@@ -38,4 +38,9 @@ This project solves the player re-identification task in sports footage, as deta
     python src/main.py
     ```
 
-3.  **Find the Output**: The script will process the video and save the final result, with player IDs drawn on the frames, to `output/output_video.mp4`. A confirmation message will be printed to the console upon completion. 
+3.  **Find the Output**: The script will process the video and save the final result, with player IDs drawn on the frames, to `output/output_video.mp4`. A confirmation message will be printed to the console upon completion.
+
+## Note on Large Files
+
+- The model file `data/best.pt` is **not included in this repository** because it exceeds GitHub's 100MB file size limit. If you need the model file to run the project, please contact the author or provide your own YOLO weights.
+- Output videos (e.g., `output/output_video.mp4`) are also excluded from version control for size reasons. Run the script to generate your own output videos. 
