@@ -12,22 +12,23 @@ This project solves the player re-identification task in sports footage, as deta
 
 ## Setup and Installation
 
-1.  **Clone the Repository**:
-    ```bash
-    git clone <your-repo-url>
-    cd <your-repo-directory>
-    ```
-
-2.  **Create a Virtual Environment** (Recommended):
-    ```bash
-    python -m venv .venv
-    source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
-    ```
-
-3.  **Install Dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+1. **Clone the Repository**:  
+   ```bash
+   git clone https://github.com/babneek/sports-player-tracking.git
+   cd sports-player-tracking
+   ```
+2. **Create a Virtual Environment** (Recommended):  
+   ```bash
+   python -m venv .venv
+   # On Windows:
+   .venv\Scripts\activate
+   # On macOS/Linux:
+   source .venv/bin/activate
+   ```
+3. **Install Dependencies**:  
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## How to Run the Code
 
@@ -40,7 +41,33 @@ This project solves the player re-identification task in sports footage, as deta
 
 3.  **Find the Output**: The script will process the video and save the final result, with player IDs drawn on the frames, to `output/output_video.mp4`. A confirmation message will be printed to the console upon completion.
 
+## Demo
+
+- The output video (`output/output_video.mp4`) demonstrates player tracking, ID assignment, and attempted jersey number recognition.
+- Tracking metrics are computed using `src/track_metrics.py`.
+
 ## Note on Large Files
 
-- The model file `data/best.pt` is **not included in this repository** because it exceeds GitHub's 100MB file size limit. If you need the model file to run the project, please contact the author or provide your own YOLO weights.
-- Output videos (e.g., `output/output_video.mp4`) are also excluded from version control for size reasons. Run the script to generate your own output videos. 
+> **Note:** The model file `data/best.pt` is **not included** due to GitHub's file size limit.  
+> Please contact me for access, or use your own YOLO weights.
+
+## How to Reproduce
+
+1. Place your YOLO model weights as `data/best.pt`.
+2. Place your input video as `data/15sec_input_720p.mp4`.
+3. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+4. Run the main script:
+   ```
+   python src/main.py
+   ```
+5. (Optional) Compute tracking metrics:
+   ```
+   python src/track_metrics.py
+   ```
+
+## Contact
+
+For the model file or any questions, please contact [your email or GitHub username]. 
