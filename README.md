@@ -80,7 +80,7 @@ Install Tesseract OCR:
 
 ## Contact
 For questions or access to the model file, contact:
-- **Babneek Saini** (<babneeksaini@gmail.com>)
+- **Babneek** (<babneeksaini@gmail.com>)
 
 ---
 **For methodology, challenges, limitations, and future work, see `report.md`.**
