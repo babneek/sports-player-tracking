@@ -44,6 +44,7 @@ This project solves the player re-identification task in sports footage, as deta
 ## Demo
 
 - The output video (`output/output_video.mp4`) demonstrates player tracking, ID assignment, and attempted jersey number recognition.
+- “The demo video shows the output of the tracking pipeline, with bounding boxes and IDs overlaid on each player.”
 - Tracking metrics are computed using `src/track_metrics.py`.
 
 ## Note on Large Files
