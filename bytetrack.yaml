@@ -1,0 +1,11 @@
+# ByteTrack configuration
+# For more details, see: https://github.com/ifzhang/ByteTrack
+
+tracker_type: bytetrack
+track_high_thresh: 0.5 # High confidence threshold for the first association (lower for more tolerance)
+track_low_thresh: 0.1  # Low confidence threshold for the second association
+new_track_thresh: 0.4  # Threshold for initializing a new track (lower for more tolerance)
+track_buffer: 90       # Number of frames to buffer a lost track before deletion (higher for more stable IDs)
+match_thresh: 0.8      # IoU threshold for matching
+fuse_score: true       # Fuse detection score with tracking score
+# Tweaked for sports player tracking: more stable IDs during motion and occlusion

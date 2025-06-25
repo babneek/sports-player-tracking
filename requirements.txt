@@ -1,0 +1,7 @@
+ultralytics
+opencv-python-headless
+torch
+torchvision
+scikit-learn
+scipy
+numpy 
